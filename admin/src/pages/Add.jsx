@@ -47,7 +47,7 @@ const Add = ({token}) => {
         setImage1(false)
         setImage2(false)
         setImage3(false)
-        setImage3(false)
+        setImage4(false)
         setPrice('')
       }else{
         toast.error(response.data.message)
@@ -156,7 +156,7 @@ const Add = ({token}) => {
         <input type="checkbox" id="bestSeller" />
         <label onChange={(e)=>setBestseller(prev=>!prev)} checked={bestseller} className="cursor-pointer" htmlFor="bestSeller">Add to bestSeller</label>
       </div>
-      <button type="submit" className="w-28 py-3 mt-4 bg-black text-white">ADD</button>
+      <button type="submit" className="w-28 py-3 mt-4 bg-black text-white cursor-pointer">ADD</button>
     </form>
   );
 };
