@@ -153,9 +153,20 @@ const Add = ({token}) => {
         </div>
       </div>
       <div className="flex gap-2 mt-2">
-        <input type="checkbox" id="bestSeller" />
-        <label onChange={(e)=>setBestseller(prev=>!prev)} checked={bestseller} className="cursor-pointer" htmlFor="bestSeller">Add to bestSeller</label>
-      </div>
+  <input
+    type="checkbox"
+    id="bestSeller"
+    checked={bestseller}
+    onChange={() => setBestseller(prev => !prev)}
+  />
+
+  <label
+    className="cursor-pointer"
+    htmlFor="bestSeller"
+  >
+    Add to BestSeller
+  </label>
+</div>
       <button type="submit" className="w-28 py-3 mt-4 bg-black text-white cursor-pointer">ADD</button>
     </form>
   );
